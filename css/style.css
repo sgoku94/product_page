@@ -1,0 +1,46 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+html, body{margin: 0;padding: 0;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content: "";display: block;clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+#products{}
+#products .total_pd{width: 1200px;height: auto;margin: 0 auto;padding: 20px 0;}
+#products .total_pd .sort_btn{padding-bottom: 20px;}
+#products .total_pd .sort_btn button{padding: 10px 20px;background: #fff;border: 1px solid #777;border-radius: 4px;cursor: pointer;}
+#products .total_pd .sort_btn button:hover,#products .total_pd .sort_btn button.active{background: #aaa;}
+
+#products .total_pd .sort_btn .sort_sel{padding: 10px 20px;background-color: #ffffff;border: 1px solid #777;border-radius: 4px;cursor: pointer;background: url(../img/arrow-down.png);background-repeat: no-repeat;background-position: 95% 50%;background-size: auto 16px; -webkit-appearance: none; appearance: none;}
+
+
+.pd_frame{width: 100%;height: auto;padding: 20px 20px 0;border: 1px solid #bbb;
+display: flex;flex-wrap: wrap;justify-content: flex-start;flex-direction: row;align-items: flex-start;}
+
+
+.pd_frame .pd_box{width: calc(25% - 20px);height: auto;border: 1px solid #bbb;padding: 10px;margin:0 10px 20px;background: #fff; box-shadow: 0 0 4px #aaa;}
+.pd_frame .pd_box .pd_photo{width: 100%;height: 200px;position: relative;overflow: hidden;}
+.pd_frame .pd_box .pd_photo img{height: 100%;position: absolute;top: 50%;left: 50%;transform:translate(-50%, -50%)}
+
+.pd_frame .pd_box .pd_info{width: 100%;height: auto;}
+.pd_frame .pd_box .pd_info .pd_tit{font-size: 20px;color: #555;padding-top: 10px;}
+.pd_frame .pd_box .pd_info .pd_txt{font-size: 16px;color: #888;padding: 10px 0;}
+.pd_frame .pd_box .pd_info .pd_etc{width: 100%;height: auto;border-top: 1px solid #bbb;display: flex;justify-content: space-between;padding: 10px 0;}
+.pd_frame .pd_box .pd_info .pd_etc .pd_price{font-size: 16px;font-weight: bold;}
+.pd_frame .pd_box .pd_info .pd_etc .pd_date{font-size: 14px;}
+.pd_frame .pd_box .pd_info .fav{text-align: right;padding: 0 0 10px;font-size: 14px;}
+.pd_frame .pd_box .pd_info .fav span{color: #f00;}
+
+.pager{padding: 20px 0; text-align: center;font-size: 0;}
+.pager li{display: inline-block;font-size: 17px;width: 36px; line-height: 1; border-right: 1px solid #888; cursor: pointer;}
+.pager li:last-child{border-right: 0;}
+.pager li.active{color: red;}
+
+
+
+
+
